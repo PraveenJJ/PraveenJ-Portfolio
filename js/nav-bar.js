@@ -19,10 +19,6 @@ function closeMenu() {
 }
 
 function toggle() {
-    var x = document.getElementById("navbarLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+    var navbarContainer = document.querySelector(".navbar-container");
+    navbarContainer.classList.toggle("fullscreen");
 }

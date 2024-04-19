@@ -57,8 +57,8 @@
       align-items: flex-start; /* Align items to the start */
   }
   .greetingText {
-    width: 80%;
-    padding: 80px 35px !important;
+    width: 89%;
+    padding: 30px 20px !important;
   }
   
   .intro {
@@ -73,6 +73,10 @@
 
   .hiAnimation {
     height: 60px !important;
+  }
+
+  .greetingImage img {
+    max-height: 360px;
   }
 
 }

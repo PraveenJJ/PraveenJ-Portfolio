@@ -36,69 +36,79 @@ a:focus {
 }
 
 .hamburger {
-  display: none; /* Hide by default */
+  display: none;
 }
 
 .hamburger img {
-  padding: 0px 20px;
-  height: 35px; /* Adjust as needed */
-}
-
-.close {
   display: none;
 }
 
 @media (max-width: 1135px) {
+  /* reduce size of logo */
   .logo img {
     padding: 0px 20px;
-    height: 70px; /* Adjust as needed */
+    height: 70px;
   }
 
+  /* hide nav links */
   .links {
     display: none;
+    transition: opacity 1.0s ease;
   }
 
+  /* display hamburger */
   .hamburger {
-    display: block; 
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
   }
 
   .hamburger img {
-    width: 30px;
-  }
-  
-  .close {
-    display: none;
-  }
-  
-  .close img{
-    width: 30px;
-  }
-
-  .hamburger.close::before,
-  .hamburger.close::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px; /* Adjust the size of the close button */
-    height: 2px; /* Adjust the size of the close button */
-    background-color: black; /* Adjust the color of the close button */
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  .hamburger.close::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  .show {
+    padding-right: 20px;
     display: block;
+    width: 30px;
+  }
+
+  /* .navbar-container.fullscreen {
+    display: flex;
+    align-items: self-end;
+  } */
+
+  .navbar-container.fullscreen .links {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: end;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
     background-color: white; /* Add your desired background color */
     z-index: 999; /* Ensure the menu appears above other content */
-    padding-top: 80px; /* Adjust this value to move the links below the navbar */
+    padding-top: 50px; /* Adjust this value to move the links below the navbar */
+    padding-left: 20px;
+    padding-bottom: 20px;
     box-sizing: border-box;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: opacity 1.0s ease;
   }
+
+  .navbar-container.fullscreen .links a {
+    padding-bottom: 15px !important;
+  }
+
+  .navbar-container.fullscreen .logo {
+    display: none;
+  }
+
+  .navbar-container.fullscreen .hamburger {
+    z-index: 999;
+    /* display: flex; */
+    
+    /* padding-left: 86.1%; */
+    transition: opacity 1.0s ease;
+  }
+
 }
