@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen J</title>
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/home-section.css">
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <div class="navbar-container">
+
+        <div class="logo">
+            <img src="./images/logo/logo7.png" alt="Logo">
+        </div>
+
+        <div class="links" id="navbarLinks">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/whatido">What I Do</a>
+            <a routerLink="/experience">Experience</a>
+            <a routerLink="/skills">Skills</a>
+            <a routerLink="/projects">Projects</a>
+            <a routerLink="/contact">Contact</a>
+        </div>
+
+        <div class="hamburger" onclick="toggle()" id="hamburgerIcon">
+            <img src="./images/icons/menu.png" alt="Menu">
+        </div>
+
+    </div>
+
+    <!-- Home Section -->
+    <div class="home">
+
+        <div class="greetingText">
+
+            <div class="greetingIntro">
+                <p class="intro">Hi, I'm Praveen J
+                </p>
+                <div class="hiAnimation">
+                    <lottie-player src="https://lottie.host/6b44b5ef-88ae-4eb2-970e-9d682a01c467/jpo0HZlPNm.json"
+                    background="##FFFFFF" speed="1" loop autoplay direction="1"
+                    mode="normal"></lottie-player>
+                </div>
+            </div>
+            
+
+            <p class="description">A passionate Java Developer with 2 years of experience in designing and building
+                Spring Boot Microservies and powerful REST APIs.</p>
+
+            <div id="socialMediaLinks">
+                <a href="https://github.com/PraveenJJ" target="_blank">
+                    <img src="./images/socialmedia/github-mark.png" alt="" srcset="">
+                </a>
+                <a href="https://www.linkedin.com/in/praveen-jaishankar/" target="_blank">
+                    <img src="./images/socialmedia/LinkedIn.png" alt="" srcset="">
+                </a>
+                <a href="mailto:praveenjaishankar123@gmail.com" target="_blank">
+                    <img src="./images/socialmedia/email1.png" alt="" srcset="">
+                </a>
+                <button class="button" onclick="openResume()">
+                    See my resume
+                </button>
+            </div>
+            
+            
+            
+        </div>
+        
+        <div class="greetingImage">
+            <img src="./images/animations/greeting_1.png" alt="" srcset="">
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./js/nav-bar.js"></script>
+    <script src="./js/home-section.js"></script>
+</body>
+
+</html>
