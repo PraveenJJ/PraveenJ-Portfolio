@@ -53,7 +53,6 @@ a:focus {
   /* hide nav links */
   .links {
     display: none;
-    transition: opacity 1.0s ease;
   }
 
   /* display hamburger */
@@ -77,22 +76,22 @@ a:focus {
 
   .navbar-container.fullscreen .links {
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 50%;
-    background-color: white; /* Add your desired background color */
+    font-weight: bold;
+    background-color:  white; /* Add your desired background color */
+    /* color: white; */
     z-index: 999; /* Ensure the menu appears above other content */
-    padding-top: 50px; /* Adjust this value to move the links below the navbar */
+    padding-top: 25%; /* Adjust this value to move the links below the navbar */
     padding-left: 20px;
     padding-bottom: 20px;
     box-sizing: border-box;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: opacity 1.0s ease;
   }
 
   .navbar-container.fullscreen .links a {
@@ -108,7 +107,6 @@ a:focus {
     /* display: flex; */
     
     /* padding-left: 86.1%; */
-    transition: opacity 1.0s ease;
   }
 
 }

@@ -13,11 +13,9 @@
 
     <!-- Nav Bar -->
     <div class="navbar-container">
-
         <div class="logo">
             <img src="./images/logo/logo7.png" alt="Logo">
         </div>
-
         <div class="links" id="navbarLinks">
             <a routerLink="/home">Home</a>
             <a routerLink="/whatido">What I Do</a>
@@ -26,16 +24,13 @@
             <a routerLink="/projects">Projects</a>
             <a routerLink="/contact">Contact</a>
         </div>
-
         <div class="hamburger" onclick="toggle()" id="hamburgerIcon">
             <img src="./images/icons/menu.png" alt="Menu">
         </div>
-
     </div>
 
     <!-- Home Section -->
     <div class="home">
-
         <div class="greetingText">
 
             <div class="greetingIntro">
@@ -69,11 +64,14 @@
 
 
         </div>
-
-        <div class="greetingImage">
-            <img src="./images/animations/greeting_1.png" alt="" srcset="">
-        </div>
+        <lottie-player src="https://lottie.host/33ebab60-8677-4f45-ab4c-487ab7a784c1/JfDXnyIg2s.json"
+            background="transparent" speed="0.7" loop autoplay direction="1" class="greetingImage"
+            mode="normal"></lottie-player>
     </div>
+
+    <!-- What I Do -->
+    
+
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./js/nav-bar.js"></script>

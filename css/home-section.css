@@ -75,8 +75,8 @@
     height: 60px !important;
   }
 
-  .greetingImage img {
-    max-height: 360px;
+  .greetingImage {
+    width: 100%;
   }
 
 }
