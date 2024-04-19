@@ -15,7 +15,7 @@
 
 /* greeting text related css */
 .greetingText {
-  width: 50%;
+  width: 60%;
   padding: 0px 100px;
 }
 
@@ -43,7 +43,7 @@
 
 /* greeting image related css */
 .greetingImage {
-  width: 50%;
+  width: 90%;
 }
 
 .greetingImage img {
@@ -55,6 +55,8 @@
   .home {
       flex-direction: column; /* Stack items vertically */
       align-items: flex-start; /* Align items to the start */
+      justify-content: flex-start;
+      height: 100%;
   }
   .greetingText {
     width: 89%;

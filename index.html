@@ -7,6 +7,7 @@
     <title>Praveen J</title>
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/home-section.css">
+    <link rel="stylesheet" href="./css/whatido.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         </div>
         <div class="links" id="navbarLinks">
             <a routerLink="/home">Home</a>
-            <a routerLink="/whatido">What I Do</a>
+            <a routerLink="/whatido">What I do</a>
             <a routerLink="/experience">Experience</a>
             <a routerLink="/skills">Skills</a>
             <a routerLink="/projects">Projects</a>
@@ -38,10 +39,10 @@
                 </p>
                 <div class="hiAnimation">
                     <lottie-player src="https://lottie.host/6b44b5ef-88ae-4eb2-970e-9d682a01c467/jpo0HZlPNm.json"
-                        background="##FFFFFF" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+                        background="##FFFFFF" speed="1" loop autoplay direction="1" mode="normal">
+                    </lottie-player>
                 </div>
             </div>
-
 
             <p class="description">A passionate Java Developer with 2 years of experience in designing and building
                 Spring Boot Microservies and powerful REST APIs.</p>
@@ -61,18 +62,40 @@
                 </button>
             </div>
 
-
-
         </div>
-        <lottie-player src="https://lottie.host/33ebab60-8677-4f45-ab4c-487ab7a784c1/JfDXnyIg2s.json"
-            background="transparent" speed="0.7" loop autoplay direction="1" class="greetingImage"
-            mode="normal"></lottie-player>
+
+        <div class="lottieGreetingImage">
+            <lottie-player src="https://lottie.host/33ebab60-8677-4f45-ab4c-487ab7a784c1/JfDXnyIg2s.json"
+                background="transparent" speed="0.7" loop autoplay direction="1" class="greetingImage"
+                mode="normal">
+            </lottie-player>
+        </div>
     </div>
 
     <!-- What I Do -->
-    
+    <div class="whatido-container">
+        <div class="whatidoImage">
+            <lottie-player src="https://lottie.host/554d3402-569e-42de-b241-494432459120/SJginC20qe.json"
+                background="transparent" speed="0.7" loop autoplay direction="1" class="whatidoLottieImg"
+                mode="normal"></lottie-player>
+        </div>
+        <div class="whatidoText">
+            <p class="whatido-intro">What I do</p>
+            <ul class="whatido-list whatido-description">
+                <li>
+                    ⚡ Develop Java-based Spring Boot Microservices aligned with business-driven architectures.
+                </li>
+                <li>
+                    ⚡ Architect and build REST APIs in accordance with SONARQube standards.
+                </li>
+                <li>
+                    ⚡ Seamlessly integrate third-party services like Volpay, Akoya, and Marqeta.
+                </li>
+            </ul>
+        </div>
+    </div>
 
-
+    <!-- script tags -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./js/nav-bar.js"></script>
     <script src="./js/home-section.js"></script>
