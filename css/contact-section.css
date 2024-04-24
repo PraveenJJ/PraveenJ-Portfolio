@@ -67,8 +67,7 @@
 @media (max-width: 1135px) {
 
   .contact-container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
   }
