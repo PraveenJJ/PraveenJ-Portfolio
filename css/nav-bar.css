@@ -4,9 +4,15 @@
 
 .navbar-container {
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  background-color: white;
+  position: fixed;
   align-items: center;
   height: 90px;
+  z-index: 999;
+  /* transition: 0.4s ease-in-out; */
+  transition: top 0.5s ease;
 }
 
 .logo {
@@ -70,8 +76,6 @@ a:focus {
   }
 
   /* .navbar-container.fullscreen {
-    display: flex;
-    align-items: self-end;
   } */
 
   .navbar-container.fullscreen .links {

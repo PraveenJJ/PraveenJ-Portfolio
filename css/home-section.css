@@ -11,6 +11,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 90px;
+  /* margin-top: 90px; */
 }
 
 /* greeting text related css */
