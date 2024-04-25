@@ -39,9 +39,15 @@
   color: inherit;
 }
 
-.links a:hover,
-a:active,
-a:focus {
+.links a:hover {
+  color: red;
+}
+
+.links a:active {
+  color: red;
+}
+
+.links a:focus {
   color: red;
 }
 
