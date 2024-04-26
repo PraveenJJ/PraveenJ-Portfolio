@@ -101,7 +101,7 @@
     background-color:  white; /* Add your desired background color */
     /* color: white; */
     z-index: 999; /* Ensure the menu appears above other content */
-    padding-top: 25%; /* Adjust this value to move the links below the navbar */
+    padding-top: 85px; /* Adjust this value to move the links below the navbar */
     padding-left: 20px;
     padding-bottom: 20px;
     box-sizing: border-box;
